@@ -1,0 +1,28 @@
+<ion-header *ngIf="!userInput">
+        <ion-navbar>
+            <ion-title>
+                Contact Page
+            </ion-title>
+        </ion-navbar>
+    </ion-header>
+    
+    <ion-content>
+        <ion-card>
+            <ion-card-header>
+               Contact
+            </ion-card-header>
+            <ion-card-content>
+                <ion-grid>
+                    <ion-row>
+                        <ion-col>Full Name</ion-col>
+                        <ion-col>{{a.text}}</ion-col>
+                    </ion-row>
+    
+                    <ion-row>
+                        <ion-col>Cell number</ion-col>
+                        <ion-col>{{a.text1}}</ion-col>
+                    </ion-row>
+    </ion-grid>
+    </ion-card-content>
+    </ion-card>
+    </ion-content>

@@ -1,14 +1,22 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar  >
     <ion-title>
       Ionic Blank
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content padding >
+  
+<ion-item>
+  <ion-input placeholder="Fullname" [(ngModel)]="a.text"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-input placeholder="Cell number" [(ngModel)]="a.text1"></ion-input>
+</ion-item>
+
+  <button ion-button full (click)="goListPage()">Go to list</button>
+  <button full ion-button (click)="toggle()">Same page view</button>
+
+  <page-contact [userInput]="a" *ngIf="show"></page-contact>
 </ion-content>
